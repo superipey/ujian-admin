@@ -1,0 +1,25 @@
+.card-title a {
+    margin-left: 10px !important;
+    display: inline-block;
+}
+
+.btn i {
+    margin-right: 0px !important;
+}
+
+.table td img, .table th img {
+    border-radius: 0 !important;
+}
+
+.table td img, .table th img {
+    width: 128px;
+    height: auto;
+}
+
+.table td, .table th {
+    white-space: inherit;
+}
+
+button.dtp-btn-cancel.btn.btn-flat, button.dtp-btn-ok btn btn-flat {
+    background: none;
+}
