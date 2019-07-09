@@ -5,9 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PPDB Admin</title>
+    <title>Ujian Admin</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ secure_asset('') }}/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="{{ asset('') }}/vendors/iconfonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('') }}/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="{{ asset('') }}/vendors/css/vendor.bundle.addons.css">
     <!-- endinject -->
@@ -76,13 +76,23 @@
                     </div>
                 </li>
                 <li class="nav-item {{ Request::segment(1) == '' ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url('/') }}"> <i class="menu-icon mdi mdi-television"></i>
+                    <a class="nav-link" href="{{ url('/') }}"> <i class="menu-icon fa fa-home"></i>
                         <span class="menu-title">Dashboard</span> </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}"> <i class="menu-icon mdi mdi-map-marker"></i>
-                        <span class="menu-title">Menu 2</span> </a>
+                    <a class="nav-link" href="{{ url('/mahasiswa') }}"> <i class="menu-icon fa fa-users"></i>
+                        <span class="menu-title">Mahasiswa</span> </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/atur_ujian') }}"> <i class="menu-icon fa fa-gamepad"></i>
+                        <span class="menu-title">Ujian</span> </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/tahun_akademik') }}"> <i class="menu-icon fa fa-graduation-cap"></i>
+                        <span class="menu-title">Tahun Akademik</span> </a>
                 </li>
             </ul>
         </nav>

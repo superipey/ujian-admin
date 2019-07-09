@@ -42,8 +42,8 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
+            'driver' => 'jwt',
+            'provider' => 'mahasiswa',
             'hash' => false,
         ],
     ],
@@ -68,8 +68,13 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Admin::class,
         ],
+
+        'mahasiswa' => [
+            'driver' => 'eloquent',
+            'model' => App\Mahasiswa::class
+        ]
 
         // 'users' => [
         //     'driver' => 'database',

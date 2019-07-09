@@ -1,7 +1,7 @@
     <footer class="footer">
         <div class="container-fluid clearfix">
                     <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">© 2019
-                        <a href="https://ppdb.disdikjabarprov.go.id" target="_blank">PPDB Provinsi Jawa Barat</a>.
+                        <a href="https://ppdb.disdikjabarprov.go.id" target="_blank">Ujian Admin</a>.
                     </span>
             <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Powered by <a href="https://somearch.co.id" target="_blank">Somearch</a>
                         <i class="mdi mdi-heart text-danger"></i>
@@ -18,9 +18,10 @@
 <!-- plugins:js -->
 {{--<script src="{{ asset('') }}/vendors/js/vendor.bundle.base.js"></script>--}}
 {{--<script src="{{ asset('') }}/vendors/js/vendor.bundle.addons.js"></script>--}}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ asset('js') }}/jquery.min.js"></script>
+    <script src="{{ asset('js') }}/jquery-ui.js"></script>
+    <script src="{{ asset('js') }}/bootstrap.min.js"></script>
+    <script src="{{ asset('js') }}/sweetalert.js"></script>
     <!-- endinject -->
 <!-- Plugin js for this page-->
 <!-- End plugin js for this page-->

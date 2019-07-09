@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PPDB Admin</title>
+    <title>Ujian Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('') }}/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{ asset('') }}/vendors/css/vendor.bundle.base.css">
@@ -69,7 +69,7 @@
                         <li>
                         </li>
                     </ul>
-                    <p class="footer-text text-center">Udah login aja, gak usah banyak tanya</p>
+                    <p class="footer-text text-center">Ujian Admin. Powered by <a href="https://somearch.co.id">Somearch</a>.</p>
                 </div>
             </div>
         </div>

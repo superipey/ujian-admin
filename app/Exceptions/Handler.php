@@ -34,6 +34,10 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
+        if ($exception instanceof RequestException) {
+            return response()->json(['error' => 'External API call failed.'], 500);
+        }
+
         parent::report($exception);
     }
 
