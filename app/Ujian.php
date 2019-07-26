@@ -39,7 +39,7 @@ class Ujian extends Model
 
     public function getScoreAttribute()
     {
-        $answer = $this->answer()->where('id_mahasiswa', auth()->user()->id)->first();
+        $answer = $this->answer()->where('id_mahasiswa', auth()->user()->id)->orderByDesc('created_at')->first();
         if (!empty($answer)) return $answer->score;
         return '-';
     }
