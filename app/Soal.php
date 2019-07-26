@@ -12,7 +12,8 @@ class Soal extends Model
     public function getPertanyaanAttribute()
     {
         $pertanyaan = $this->attributes['pertanyaan'];
-        $pertanyaan = str_replace(env('APP_URL'), env('APP_IP'), $pertanyaan);
+//        $pertanyaan = str_replace(env('APP_URL'), env('APP_IP'), $pertanyaan);
+        $pertanyaan = str_replace("http://localhost/ujian-admin/public", "https://api.ecl.somearch.site", $pertanyaan);
         return $pertanyaan;
     }
 }
